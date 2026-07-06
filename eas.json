@@ -1,0 +1,16 @@
+{
+  "cli": { "version": ">= 12.0.0" },
+  "build": {
+    "apk": {
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "env": { "NODE_ENV": "production" }
+    },
+    "preview": {
+      "extends": "apk",
+      "distribution": "internal"
+    }
+  }
+}
